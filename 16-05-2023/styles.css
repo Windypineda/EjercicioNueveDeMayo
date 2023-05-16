@@ -1,0 +1,90 @@
+                /* stilo general de la pagina  */
+                
+                * {
+                    padding: 0px;
+                    margin: 0px;
+                    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                    font-size: auto;
+                    color: aliceblue;
+                }
+                /* familias tipograficas  */
+                
+                .arial {
+                    font-family: courier, arial, helvética;
+                    justify-content: end;
+                }
+                
+                .calibri {
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                    text-align: justify;
+                }
+                
+                .cursiva {
+                    font-family: cursive;
+                    text-align: left;
+                }
+                /* estilos de los contenedores  */
+                
+                body {
+                    background-color: #493042;
+                    text-align: center;
+                }
+                
+                .home {
+                    display: flex
+                }
+                
+                .in-flex {
+                    flex: 1;
+                }
+                
+                .in-flex:first-child {
+                    flex: 2;
+                    padding: 25px;
+                    background-color: rgb(122, 65, 105);
+                    margin: 25px;
+                }
+                
+                .in-flex div {
+                    padding: 25px;
+                    background-color: rgb(90, 45, 80);
+                    margin: 25px;
+                }
+                /* estilos de la imagen  */
+                
+                .beyonce {
+                    width: 400px;
+                    height: 400px;
+                    margin: 5px;
+                    flex-wrap: wrap;
+                }
+                /* responsive */
+                
+                @media only screen and (max-width: 300px) {
+                    .home {
+                        display: block;
+                        flex-wrap: wrap;
+                    }
+                    .in-flex {
+                        display: none;
+                        flex-wrap: wrap;
+                    }
+                    .in-flex:first-child {
+                        background-color: aqua;
+                        display: flex;
+                        flex-wrap: wrap;
+                    }
+                }
+                /* estilos del boton   */
+                
+                .button {
+                    background-color: #c9268a;
+                    /* Green */
+                    border: none;
+                    color: white;
+                    padding: 15px 32px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                }
